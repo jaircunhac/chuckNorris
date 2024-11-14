@@ -2,7 +2,7 @@ import "./style.css"
 
 const Header = () => {
     return(
-        <header id="header"><img src="./icon.jpg" /></header>
+        <header className="header"><img src="./icon.jpg" /></header>
     );
 }
 

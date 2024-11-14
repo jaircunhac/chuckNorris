@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from 'axios'
+import "./style.css"
 
 const Home = () => {
 
@@ -12,9 +13,11 @@ const Home = () => {
 
     return (
         <div className="container">
-            <h1>Funny joke</h1>
+            <div className="image">
+                {!joke ? <img src="./ChuckNorrisOld.jpg"/> : <img src="./ChuckNorrisPeak.jpg"/>}
+            </div>
             <div className="joke">
-                <h2>{!joke ? "Omega fun image" : "Alpha fun image"}</h2>
+                <h2>{joke}</h2>
                 <button onClick={randomJoke} className="submit">{!joke ? "Click here for a super funny joke" : "Click here to see another super ultra funny joke"}</button>
             </div>
         </div>

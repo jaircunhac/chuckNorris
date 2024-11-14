@@ -1,12 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-// import Home from './pages/home'
-import Header from './pages/header'
+import Home from './pages/home'
+import Header from './components/header'
+import Footer from './components/footer'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* <Home /> */}
-  <Header />
+    <Header />
+    <Home />
+    <Footer />
   </StrictMode>,
 )
